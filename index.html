@@ -195,7 +195,88 @@
     transform: scale(1.05);
     text-decoration: none;
 }
+        
+@media screen and (max-width: 767px) {
+    .firstsection {
+        flex-direction: column; 
+        align-items: center;
+    }
+    .firstsection > div {
+        width: 90%; 
+    }
+    .rightsection img {
+        width: 100%; 
+        margin: 20px 0;
+    }
+    nav ul {
+        flex-direction: column; 
+        text-align: center;
+    }
+    nav ul li {
+        margin: 10px 0; 
+    }
+    .back-to-top {
+        bottom: 10px;
+        right: 10px;
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+    .leftsection {
+        font-size: 2rem; 
+    }
+}
 
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .firstsection {
+        flex-direction: row; 
+        justify-content: space-between;
+    }
+    .firstsection > div {
+        width: 45%; 
+    }
+    .rightsection img {
+        width: 100%; 
+    }
+    nav ul {
+        flex-direction: row; 
+        justify-content: center;
+    }
+    nav ul li {
+        margin: 0 15px;
+    }
+    .leftsection {
+        font-size: 2.5rem; 
+    }
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        font-size: 1rem; 
+    }
+}
+
+
+@media screen and (min-width: 1025px) {
+    .firstsection {
+        flex-direction: row; 
+        justify-content: space-around;
+    }
+    .firstsection > div {
+        width: 30%; 
+    }
+    .rightsection img {
+        width: 120%; 
+    }
+    .back-to-top {
+        bottom: 20px;
+        right: 20px;
+        padding: 10px 15px;
+        font-size: 1rem;
+    }
+    nav ul li {
+        margin: 0 23px; 
+    }
+}
 
 
     </style>
