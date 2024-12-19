@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaskarjyoti Bhattacharyya Portfolio</title>
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+       body{
+        background-color: rgb(155, 185, 245);
+        font-family: 'Poppins',sans-serif;
+       }
+       nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height:50px;
+        background-color: rgb(184, 72, 248);
+
+       }
+       nav ul{
+        display: flex;
+        justify-content: center;
+       }
+       nav ul li {
+        
+       list-style: none;
+       margin: 0 23px;
+       }
+      nav ul li a{
+        text-decoration: none;
+        color: beige;
+        
+      }
+      nav ul li a:hover{
+        color: rgb(92, 92, 224);
+        font-size: 0.9rem;
+      }
+      .left{
+        font-size: 1.5rem;
+      }
+      .firstsection{
+        display: flex;
+        justify-content: space-around;
+        margin: 120px 0;
+      }
+      .firstsection >div{
+        width:30%;
+        margin: 50px 0;
+      }
+      .leftsection{
+       
+        font-size: 3rem;
+        margin: 30px 0;
+
+      }
+      .rightsection img{
+        width:120%;
+        margin:20px 0;
+       
+      }
+      .purple{
+        color: rgb(65, 7, 120);
+
+      }
+      #element{
+        color: rgb(65, 7, 120);
+      }
+      .about{
+        max-width: 80vw;
+    margin: auto;
+    height: auto; 
+    padding: 10px;
+      }
+      main hr{
+        border: 0px;
+    background: rgb(145, 131, 223);
+    height: 1.2px;
+    margin: 8px 0px;
+
+      }
+      .about, .work-experience,.project,.contact {
+    max-width: 80vw;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.project-item {
+    background-color: rgb(145, 131, 223);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    margin: 10px 0;
+}
+
+.project-item h2 {
+    font-size: 1.5rem;
+    color: rgb(65, 7, 120);
+}
+
+.project-item p {
+    font-size: 1rem;
+    margin: 5px 0 10px;
+    color: #333;
+}
+
+.project-item a:hover {
+    color: rgb(92, 92, 224); 
+    text-decoration: underline;
+} 
+.contact h1 {
+    font-size: 1.8rem;
+    color: rgb(65, 7, 120);
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact ul li {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.contact ul li a:hover {
+    text-decoration: underline;
+    color: rgb(92, 92, 224);
+}
+.footer {
+    background-color: rgb(184, 72, 248); 
+    color: beige;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+} 
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(184, 72, 248);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none; /* Hidden by default */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.back-to-top:hover {
+    background-color: rgb(92, 92, 224);
+}
+.download-resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: rgb(184, 72, 248);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease-in-out, transform 0.2s;
+}
+
+.download-resume-btn:hover {
+    background-color: rgb(92, 92, 224);
+    transform: scale(1.05);
+    text-decoration: none;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left">Bhaskarjyoti Bhattacharyya's Portfolio</div>
+            <div class="right"></div>
+            <ul>
+               <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+               <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="firstsection">
+            <div class="leftsection">Hi! My name is <span class="purple">Bhaskarjyoti</span> and I am a passionate<br>
+                <span id="element"></span><br>
+                <a href="resume.pdf" download="Bhaskarjyoti_Resume" class="download-resume-btn">Download Resume</a>
+            </div>
+           
+            <div class="rightsection"><img src="pngwing.com.png"></div>
+        </section>
+        <hr >
+        <section id="about" class="about">
+          <h1>About Me</h1>
+          <p>I am Bhaskarjyoti Bhattacharyya, a passionate Web Developer and Problem Solver. My expertise lies in crafting user-friendly designs and efficient front-end solutions.</p>
+      </section>
+      <hr>
+        <section id="work-experience" class="work-experience">
+           <h1>Work Experience</h1>
+            <p>IIIT Ghy (8th June 2024 - 14th July 2024): Study of Induced Forest in Gabriel Graph.</p>
+            
+
+        </section>
+        <hr>
+        <section id="project" class="project">
+          <h1>Projects</h1>
+          <div class="project-item">
+              <h2>Portfolio Website</h2>
+              <p>This project is a personal portfolio website designed to showcase my skills, work experience, and projects. It features:</p>
+              <ul>
+                  <li>A responsive and interactive design.</li>
+                  <li>Clean typography using Google Fonts.</li>
+                  <li>Animations implemented with the Typed.js library.</li>
+                  <li>Responsive layout built with Flexbox and CSS.</li>
+              </ul>
+              <p>Technologies Used: HTML, CSS, JavaScript, Typed.js, Google Fonts.</p>
+              <a href="#" target="_blank" style="text-decoration: none; color: blue;">View Project</a>
+            </section>
+          </div>
+          <hr>
+          <section id="contact" class="contact">
+            <h1>Contact Me</h1>
+            <ul>
+                <li>Email: <a href="mailto:bbhatta431@gmail.com" style="text-decoration: none; color: blue;">bbhatta431@gmail.com</a></li>
+                <li>Phone: <a href="tel:+91-6003393896" style="text-decoration: none; color: blue";>+91-6003393896</a></li>
+            </ul>
+        </section>
+      
+    </main>
+    <footer class="footer">
+      <p>© 2024 Bhaskarjyoti Bhattacharyya. All rights reserved.</p>
+  </footer>
+  <button id="backToTop" class="back-to-top">↑ Back to Top</button>
+
+  
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['<i>Web</i> Developer.', 'Problem Solver.'],
+          typeSpeed: 120,
+          backSpeed: 54, 
+          loop: true
+        });
+        </script>
+        <script>
+          // Get the button
+          const backToTopButton = document.getElementById('backToTop');
+      
+          // Show button when scrolling down
+          window.onscroll = function () {
+              if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                  backToTopButton.style.display = 'block';
+              } else {
+                  backToTopButton.style.display = 'none';
+              }
+          };
+      
+          // Scroll to the top when the button is clicked
+          backToTopButton.addEventListener('click', function () {
+              window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth'
+              });
+          });
+      </script>
+      
+</body>
+</html>
